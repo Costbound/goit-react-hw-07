@@ -8,3 +8,9 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
+.loader {
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 8px;
+}

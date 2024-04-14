@@ -2,8 +2,8 @@ import css from './ContactForm.module.css'
 import { useId } from 'react'
 import { ErrorMessage, Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import { addContact } from '../../redux/contactsSlice'
 import { useDispatch } from 'react-redux'
+import { addContact } from '../../redux/contactsOps'
 
 const validation = Yup.object().shape({
     name: Yup.string().min(3, 'Name is too Short!').max(50, 'Name is too long!').required('This field cannot be empty!'),
